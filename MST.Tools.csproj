@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
+    <Version>0.3.0</Version>
+    <Authors>MST</Authors>
+    <Company>MST</Company>
+    <PackageId>MST.Tools</PackageId>
+    <Description>Useful console utilities for .NET CLI apps.</Description>
+    <PackageTags>console;cli;ansi;terminal;theming;colors;text-formatting;utilities;input;output;menu;user-interface;mst;dotnet;cross-platform</PackageTags>
+    <LangVersion>latest</LangVersion>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/USERNAME/MST.Tools</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageOutputPath>out</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+</Project>
