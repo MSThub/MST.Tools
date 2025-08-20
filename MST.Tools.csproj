@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
-    <Version>0.3.0</Version>
+    <Version>0.3.1</Version>
     <Authors>MST</Authors>
     <Company>MST</Company>
     <PackageId>MST.Tools</PackageId>
