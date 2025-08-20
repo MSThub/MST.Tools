@@ -27,7 +27,18 @@ jobs:
       - name: Pack
         run: dotnet pack --configuration Release --no-build
 
+      # Publish to NuGet.org
       - name: Publish to NuGet.org
         env:
           NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
         run: dotnet nuget push "out/*.nupkg" --api-key "$NUGET_API_KEY" --source https://api.nuget.org/v3/index.json --skip-duplicate
+
+      # Publish to GitHub Packages
+      - name: Publish to GitHub Packages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PACKAGE_KEY }}
+        run: |
+          dotnet nuget push "out/*.nupkg" \
+            --api-key $GITHUB_TOKEN \
+            --source "https://nuget.pkg.github.com/MSTHub/index.json" \
+            --skip-duplicate

@@ -10,7 +10,7 @@
     <PackageTags>console;cli;ansi;terminal;theming;colors;text-formatting;utilities;input;output;menu;user-interface;mst;dotnet;cross-platform</PackageTags>
     <LangVersion>latest</LangVersion>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/USERNAME/MST.Tools</RepositoryUrl>
+    <RepositoryUrl>https://github.com/MSTHub/MST.Tools</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
